@@ -58,9 +58,13 @@ def testar_b3_publico() -> tuple[bool, str]:
         if r.status_code != 200:
             return False, f"HTTP {r.status_code}"
         dados = r.json()
-        if not isinstance(dados, dict) or "cashDividends" not in dados:
+        # A B3 às vezes devolve um objeto único, às vezes uma lista com um
+        # objeto dentro -- o mesmo tratamento que o app de verdade usa
+        # (core/b3_publico.py::_parsear_cash_dividends).
+        item = dados[0] if isinstance(dados, list) and dados else dados
+        if not isinstance(item, dict) or "cashDividends" not in item:
             return False, "resposta em formato inesperado"
-        return True, f"ok, {len(dados.get('cashDividends') or [])} proventos no retorno"
+        return True, f"ok, {len(item.get('cashDividends') or [])} proventos no retorno"
     except Exception as e:
         return False, f"{type(e).__name__}: {e}"[:200]
 
