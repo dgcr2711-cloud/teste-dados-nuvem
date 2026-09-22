@@ -86,3 +86,4 @@ data_hora_utc;yahoo_finance_ok;yahoo_finance_detalhe;b3_ok;b3_detalhe
 2026-09-21T17:47:30+00:00;SIM;ok, ultimo fechamento: 48.14;SIM;ok, 24 proventos no retorno
 2026-09-21T21:39:20+00:00;SIM;ok, ultimo fechamento: 48.00;SIM;ok, 24 proventos no retorno
 2026-09-22T01:24:23+00:00;SIM;ok, ultimo fechamento: 48.00;SIM;ok, 24 proventos no retorno
+2026-09-22T10:53:40+00:00;SIM;ok, ultimo fechamento: 48.00;NAO;HTTP 403
