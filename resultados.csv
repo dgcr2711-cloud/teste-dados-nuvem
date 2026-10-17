@@ -173,3 +173,4 @@ data_hora_utc;yahoo_finance_ok;yahoo_finance_detalhe;b3_ok;b3_detalhe
 2026-10-16T15:59:47+00:00;SIM;ok, ultimo fechamento: 58.03;SIM;ok, 24 proventos no retorno
 2026-10-16T20:27:19+00:00;SIM;ok, ultimo fechamento: 59.68;SIM;ok, 24 proventos no retorno
 2026-10-17T01:00:05+00:00;SIM;ok, ultimo fechamento: 59.68;NAO;ReadTimeout: HTTPSConnectionPool(host='sistemaswebb3-listados.b3.com.br', port=443): Read timed out. (read timeout=12)
+2026-10-17T10:05:38+00:00;SIM;ok, ultimo fechamento: 59.68;SIM;ok, 24 proventos no retorno
